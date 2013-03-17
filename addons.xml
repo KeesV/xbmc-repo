@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
-<addon id="repository.keesv" version="1.0.0" name="KeesV's XBMC Addons" provider-name="KeesV" >
-	<requires>
-	</requires>
-	<extension point="xbmc.addon.repository" name="KeesV's XBMC Addons">
+<addon	id="repository.keesv"
+		name="KeesV's repo"
+		version="1.0.0"
+		provider-name="KeesV">
+	<extension	point="xbmc.addon.repository"
+				name="KeesV's repo">
 		<info compressed="false">https://raw.github.com/KeesV/xbmc-repo/master/addons.xml</info>
-    		<checksum>https://raw.github.com/KeesV/xbmc-repo/master/addons.xml.md5</checksum>
-    		<datadir zip="true">https://raw.github.com/KeesV/xbmc-repo/master/</datadir>
+		<checksum>https://raw.github.com/KeesV/xbmc-repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/KeesV/xbmc-repo/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>KeesV's Addons</summary>
-		<description>Download and install add ons by KeesV</description>
+		<summary>Install KeesV's repo</summary>
+		<description>Download and install KeesV's repo</description>
+		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
 
-
-<addon id="script.movielights" version="0.0.1" name="XBMC Movie Lights" provider-name="Kees Verhaar" >
+<addon id="script.service.movielights"
+	version="0.0.1"
+	name="XBMC Movie Lights"
+	provider-name="KeesV">
 	<requires>
 	</requires>
+	<extension point="xbmc.service" library="addon.py">
+	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Controls lights based on XBMC status</summary>
 		<description>Controls lights based on XBMC status</description>
 		<platform>all</platform>
 	</extension>
-	<extension point="xbmc.service" library="addon.py">
-	</extension>
+
 </addon>
 </addons>
